@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">myPlay</string>
+    <string name="my_song">My Song</string>
+    <string name="please_wait_for_next_song">Please wait for next song.........</string>
+    <string name="_0_10">0:10</string>
+    <string name="imsjkumar">imsjkumar</string>
+    <string name="share">Share</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+</resources>
