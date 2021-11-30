@@ -2,6 +2,7 @@ package com.imsjkumar.myplay;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -10,7 +11,6 @@ import android.graphics.PorterDuff;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.FileObserver;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +35,7 @@ public class PlayerActivity extends AppCompatActivity {
     TextView txtSongName, txtSongStart, txtSongEnd;
     SeekBar seekMusicBar;
     ImageView imageView;
+    private Toolbar toolbar;
     BarVisualizer barVisualizer;
     String songName;
     public static final String EXTRA_NAME = "song_name";
@@ -62,6 +63,16 @@ public class PlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
+
+        toolbar= findViewById(R.id.appBar);
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(PlayerActivity.this,MainActivity.class);
+            startActivity(intent);
+            finish();
+            }
+        });
 
 //        getSupportActionBar().setTitle("Suraj's Music");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
