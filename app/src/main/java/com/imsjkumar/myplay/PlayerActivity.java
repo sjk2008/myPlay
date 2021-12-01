@@ -195,6 +195,8 @@ public class PlayerActivity extends AppCompatActivity {
                 btnNext.performClick();
             }
         });
+
+
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -205,8 +207,9 @@ public class PlayerActivity extends AppCompatActivity {
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
                 songName = mySongs.get(position[0]).getName();
                 txtSongName.setText(songName);
+                txtSongEnd.setText(createTime(mediaPlayer.getDuration()));
                 mediaPlayer.start();
-                startAnimation(imageView, 360f);
+                startAnimation(imageView, 180f);
             }
         });
         btnPrevious.setOnClickListener(new View.OnClickListener() {
