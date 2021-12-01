@@ -222,6 +222,7 @@ public class PlayerActivity extends AppCompatActivity {
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
                 songName = mySongs.get(position[0]).getName();
                 txtSongName.setText(songName);
+                txtSongStart.setText(createTime(0));
                 mediaPlayer.start();
                 startAnimation(imageView, -360f);
             }
