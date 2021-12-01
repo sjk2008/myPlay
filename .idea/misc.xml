@@ -3,16 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_menu.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_music.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_pause.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_profile.xml" value="0.10885416666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/ic_wave.xml" value="0.20185185185185187" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/drawable/list_bg.xml" value="0.20185185185185187" />
-        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/layout/activity_player.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/layout/drawer_header.xml" value="0.20104166666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/layout/list_item.xml" value="0.22" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/menu/drawer_menu.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/myPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21666666666666667" />
       </map>
     </option>
   </component>

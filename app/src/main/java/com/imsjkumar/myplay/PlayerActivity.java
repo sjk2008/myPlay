@@ -74,10 +74,6 @@ public class PlayerActivity extends AppCompatActivity {
             }
         });
 
-//        getSupportActionBar().setTitle("Suraj's Music");
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-
         btnNext = findViewById(R.id.btnNext);
         btnPrevious = findViewById(R.id.btnPrevious);
         btnForward = findViewById(R.id.btnFastForward);
