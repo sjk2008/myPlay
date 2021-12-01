@@ -223,8 +223,9 @@ public class PlayerActivity extends AppCompatActivity {
                 songName = mySongs.get(position[0]).getName();
                 txtSongName.setText(songName);
                 txtSongStart.setText(createTime(0));
+                txtSongEnd.setText(createTime(mediaPlayer.getDuration()));
                 mediaPlayer.start();
-                startAnimation(imageView, -360f);
+                startAnimation(imageView, -180f);
             }
         });
 
