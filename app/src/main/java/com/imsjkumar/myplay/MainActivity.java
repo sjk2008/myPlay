@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private ActionBarDrawerToggle actionBarDrawerToggle;
 
-
     ListView listView;
     String[] items;
 
@@ -55,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         runTimePermission();
         setUpToolBar();
     }
+
     private void setUpToolBar() {
         drawerLayout = findViewById(R.id.drawerLayout);
         toolbar = findViewById(R.id.appBar);
@@ -96,18 +96,19 @@ public class MainActivity extends AppCompatActivity {
                         permissionToken.continuePermissionRequest();
                     }
                 }).check();
-}
+    }
 
     public ArrayList<File> findSong(File file) {
         ArrayList<File> arrayList = new ArrayList<>();
         File[] files = file.listFiles();
-
-        for (File singleFile : files) {
-            if (singleFile.isDirectory() && !singleFile.isHidden()) {
-                arrayList.addAll(findSong(singleFile));
-            } else {
-                if (singleFile.getName().endsWith(".mp3") || singleFile.getName().endsWith(".wav")) {
-                    arrayList.add(singleFile);
+        if (files != null) {
+            for (File singleFile : files) {
+                if (singleFile.isDirectory() && !singleFile.isHidden()) {
+                    arrayList.addAll(findSong(singleFile));
+                } else {
+                    if (singleFile.getName().endsWith(".mp3") || singleFile.getName().endsWith(".wav")) {
+                        arrayList.add(singleFile);
+                    }
                 }
             }
         }
@@ -136,30 +137,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-class customAdapter extends BaseAdapter {
+    class customAdapter extends BaseAdapter {
 
-    @Override
-    public int getCount() {
-        return items.length;
+        @Override
+        public int getCount() {
+            return items.length;
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View view = getLayoutInflater().inflate(R.layout.list_item, null);
+            TextView textView = view.findViewById(R.id.mySongTV);
+            textView.setSelected(true);
+            textView.setText(items[position]);
+            return view;
+        }
     }
 
-    @Override
-    public Object getItem(int i) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View view = getLayoutInflater().inflate(R.layout.list_item, null);
-        TextView textView = view.findViewById(R.id.mySongTV);
-        textView.setSelected(true);
-        textView.setText(items[position]);
-        return view;
-    }
-}
 }
